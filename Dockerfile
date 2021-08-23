@@ -35,6 +35,8 @@ RUN cd modules/ \
     && mv omeka-s-Reference/ ./Reference \
     && git clone https://github.com/KompetenzwerkD/omeka-s-Thesauri \
     && mv omeka-s-Thesauri/ ./Thesauri \
+    && git clone https://github.com/KompetenzwerkD/omeka-s-ProjectDashboard \
+    && mv omeka-s-ProjectDashboard/ ./ProjectDashboard \
     && curl -J -L -s -k https://github.com/omeka-s-modules/CustomVocab/releases/download/v1.3.1/CustomVocab-1.3.1.zip -o ./CustomVocab.zip \
     && unzip -q ./CustomVocab.zip -d ./ \
     && rm -rf CustomVocab.zip \
