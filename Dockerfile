@@ -40,6 +40,9 @@ RUN cd modules/ \
     && curl -J -L -s -k https://github.com/omeka-s-modules/CustomVocab/releases/download/v1.3.1/CustomVocab-1.3.1.zip -o ./CustomVocab.zip \
     && unzip -q ./CustomVocab.zip -d ./ \
     && rm -rf CustomVocab.zip \
+    && curl -J -L -s -k https://github.com/omeka-s-modules/CSVImport/releases/download/v2.2.1/CSVImport-2.2.1.zip -o ./CSVImport.zip \
+    && unzip -q ./CSVImport.zip -d ./ \
+    && rm -rf CSVImport.zip \
     && cd ..
 
 RUN chown -R www-data:www-data /var/www/html
